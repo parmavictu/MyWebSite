@@ -1,7 +1,7 @@
 {
   "name": "myWebSite",
   "version": "1.0.0",
-  "description": "",
+  "description": "My website, enjoy it!!!",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
@@ -15,6 +15,10 @@
   "author": "parmavictu",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
     "bootstrap": "4.1.1",
     "copy-webpack-plugin": "4.5.1",
     "cross-env": "5.1.5",
@@ -26,6 +30,11 @@
     "optimize-css-assets-webpack-plugin": "4.0.1",
     "popper.js": "1.14.3",
     "postcss-loader": "2.1.5",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router": "4.2.0",
+    "react-router-dom": "4.2.2",
+    "react-scripts": "3.0.1",
     "sass-loader": "7.0.1",
     "style-loader": "0.21.0",
     "uglifyjs-webpack-plugin": "1.2.5",
