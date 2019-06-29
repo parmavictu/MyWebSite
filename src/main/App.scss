@@ -1,0 +1,60 @@
+$div-height: 850px;
+.app{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: $div-height $div-height $div-height $div-height;
+    grid-template-areas: 'img me' 'img skills' 'img repository' 'img contact'
+}
+
+.app>img{
+    grid-area: img;
+    position: fixed;
+    height: 100vh;
+    width: 49.6vw;
+}
+#me{
+    grid-area: me;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+    img{
+        height: 5rem;
+        width: 5rem;
+    }
+    h1{
+        font-size: 5em;
+        letter-spacing: 0.7rem;
+    }
+    h3{
+        font-size: 2.5em;
+    }
+}
+#skills {
+    grid-area:skills;
+}
+#repository {
+    p{
+        font-size: 2rem;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    a,a:hover{
+        text-decoration: none;
+        color: inherit;
+    }
+    a:hover{
+        color: black !important;
+    }
+    grid-area:repository;
+    display: flex;
+    flex-direction: column;
+}
+#contact {
+    grid-area:contact;
+}
+
+
