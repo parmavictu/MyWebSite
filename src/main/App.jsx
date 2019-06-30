@@ -1,6 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'font-awesome/css/font-awesome.css'
-
 
 import React from 'react'
 import './App.scss'
@@ -13,13 +10,15 @@ import FourthDiv from '../components/templates/FourthDiv'
 
 export default props =>
     <div className="app">
-        <img src="../assets/imgs/computers.png" alt="computer-img" className='visible-lg-block'/>
+        <img src="./assets/imgs/computers.png" alt="computer-img" className='visible-lg-block'/>
         <RightSide id='me'>
             <FirstDiv/>
         </RightSide>
-        <RightSide id='skills'/>
+        <RightSide id='skills'><SecondtDiv/></RightSide>
         <RightSide id='repository'>
             <ThirdDiv/>
         </RightSide>
-        <RightSide id='contact'/>
+        <RightSide id='contact'>
+            <FourthDiv/>
+        </RightSide>
     </div>

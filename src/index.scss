@@ -1,12 +1,18 @@
+$fa-font-path:"~font-awesome/fonts" ;
+@import "~bootstrap/scss/bootstrap";
+@import "~font-awesome/scss/font-awesome";
+
 @font-face{
     font-family: 'Indie Flower';
     src: url('./fonts/IndieFlower.ttf');
 }
 *{
     font-family: 'Indie Flower', cursive;
-    color:white;
+    color:black;
 }
 body{
     margin:0px;
     
 }
+
+

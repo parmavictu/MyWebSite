@@ -1,3 +1,4 @@
+
 $div-height: 850px;
 .app{
     display: grid;
@@ -5,7 +6,20 @@ $div-height: 850px;
     grid-template-rows: $div-height $div-height $div-height $div-height;
     grid-template-areas: 'img me' 'img skills' 'img repository' 'img contact'
 }
-
+.container{
+    margin: 2.5rem;
+    h1{
+        font-size: 3rem;
+    }
+}
+.skills-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size:1.4em; 
+    
+}
 .app>img{
     grid-area: img;
     position: fixed;
@@ -35,19 +49,18 @@ $div-height: 850px;
 #skills {
     grid-area:skills;
 }
-#repository {
+#repository,#contact {
     p{
+        margin-top: 2rem;
         font-size: 2rem;
     }
-    h1{
-        font-size: 3rem;
-    }
+    
     a,a:hover{
         text-decoration: none;
         color: inherit;
     }
     a:hover{
-        color: black !important;
+        color: white !important;
     }
     grid-area:repository;
     display: flex;

@@ -1,7 +1,10 @@
 import React from 'react'
 
-export default props => 
+export default props =>
     <React.Fragment>
-        <i></i><h1>Contact</h1>
-        <a href=""></a>
+        <div className="container">
+            <h1><i class="fa fa-envelope"></i> Contact</h1>
+            <p><a href="victorparma@hotmail.com">victorparma@hotmail.com</a></p>
+        </div>
+
     </React.Fragment>
