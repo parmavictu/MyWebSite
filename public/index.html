@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,5 +12,29 @@
     <noscript>Você precisa ativar o JavaScript para a página funcionar perfeitamente.</noscript>
     <div id="root"></div>
     <script src="app.js"></script>
+    <script>
+        const allContent = Array.from(document.querySelectorAll('.effect'))
+        allContent.forEach(e => e.style.opacity = 0)
+        function fade(num) {
+            let i = 0
+            const counter = window.setInterval(function () {
+                if (i >= 10){
+                    if (num <=3){
+                        clearInterval(counter)
+                        fade(num+1)
+                    }
+                    clearInterval(counter)
+                }
+                else {
+                    allContent[num].style.opacity = (i/10)
+                    i++
+                }
+            }
+                , 30)
+        }
+        fade(0)
+        /**Poderia ter feito no react alterando o state?Sim !!!! mas deu vontade de fazer assim.*/
+    </script>
 </body>
+
 </html>

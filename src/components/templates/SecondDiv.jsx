@@ -2,8 +2,8 @@ import React from 'react'
 
 
 export default props =>
-    <div className='container'>
-        <h1><i class="fa fa-angle-left"></i>/ <i class="fa fa-angle-right"></i> Skills</h1>
+    <div className='contain'>
+        <h1><i className="fa fa-angle-left"></i>/ <i className="fa fa-angle-right"></i> Skills</h1>
         <div className='skills-content'>
             <div className='languages-content'>
                 <h2>Languages</h2>

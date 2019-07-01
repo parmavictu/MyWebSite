@@ -10,15 +10,14 @@ import FourthDiv from '../components/templates/FourthDiv'
 
 export default props =>
     <div className="app">
-        <img src="./assets/imgs/computers.png" alt="computer-img" className='visible-lg-block'/>
         <RightSide id='me'>
-            <FirstDiv/>
+            <FirstDiv />
         </RightSide>
-        <RightSide id='skills'><SecondtDiv/></RightSide>
+        <RightSide id='skills'><SecondtDiv /></RightSide>
         <RightSide id='repository'>
-            <ThirdDiv/>
+            <ThirdDiv />
         </RightSide>
         <RightSide id='contact'>
-            <FourthDiv/>
+            <FourthDiv />
         </RightSide>
     </div>

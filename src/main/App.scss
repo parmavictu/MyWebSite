@@ -1,12 +1,20 @@
 
 $div-height: 850px;
+.effect{
+    opacity:0;
+    width: 50vw;
+    height: 50vh;
+
+}
 .app{
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: $div-height $div-height $div-height $div-height;
-    grid-template-areas: 'img me' 'img skills' 'img repository' 'img contact'
+    grid-template-rows: auto auto ;
+    grid-template-areas: 'me skills' 'repository contact'
 }
-.container{
+.contain{
     margin: 2.5rem;
     h1{
         font-size: 3rem;
@@ -15,17 +23,14 @@ $div-height: 850px;
 .skills-content{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto; 
+    //para responsivo ->justify-content: space-around;
     margin-top: 2rem;
     padding: 1rem;
     font-size:1.4em; 
     
 }
-.app>img{
-    grid-area: img;
-    position: fixed;
-    height: 100vh;
-    width: 49.6vw;
-}
+
 #me{
     grid-area: me;
     display:flex;
@@ -68,6 +73,72 @@ $div-height: 850px;
 }
 #contact {
     grid-area:contact;
+}
+
+
+@media only screen and (max-width: 768px){
+    .app{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 'me' 'skills' 'repository' 'contact';
+    }
+    .effect{
+        width: 100vw;
+        height: 100vh;
+    }
+    .skills-content{
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: 1fr;
+
+    }
+    #contact,#repository{
+        height: 60vh!important;
+    }
+    #me {
+        height: 80vh!important;
+    }
+
+    #me{
+        
+        
+        img{
+            height: 4rem;
+            width: 4rem;
+        }
+        h1{
+            font-size: 4em;
+            letter-spacing: 0.4rem;
+        }
+        h3{
+            font-size: 2.0em;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width:769px){
+    #me{
+        img{
+            height: 4rem;
+            width: 4rem;
+        }
+        h1{
+            font-size: 3em!important;
+            letter-spacing: 0.4rem;
+        }
+        h3{
+            font-size: 1.5em!important;
+        }
+    }
+    .skills-content{
+        font-size: 1em;
+        h2{
+            font-size:1.5em;
+        }
+    }
+
+    
 }
 
 
