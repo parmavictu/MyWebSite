@@ -10,13 +10,16 @@ $fa-font-path:"~font-awesome/fonts" ;
     font-family: 'Indie Flower', cursive;
     color:black;
     box-sizing: border-box;
+    
 }
 body,html{
-    margin: 0!important;
-    padding: 0!important;
-    
-    
-    
+    margin: 0!important;   
 }
-
+@media only screen and (max-width: 768px){
+    html,body{
+        overflow-x: hidden!important;
+        margin:0px;
+        padding: 0px;
+    }
+}
 

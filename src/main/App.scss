@@ -1,7 +1,7 @@
 
 $div-height: 850px;
 .effect{
-    opacity:0;
+    
     width: 50vw;
     height: 50vh;
 
@@ -24,13 +24,14 @@ $div-height: 850px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto; 
-    //para responsivo ->justify-content: space-around;
     margin-top: 2rem;
     padding: 1rem;
     font-size:1.4em; 
     
 }
-
+body{
+    background-color: #FECEA8;
+}
 #me{
     grid-area: me;
     display:flex;
@@ -90,14 +91,16 @@ $div-height: 850px;
     .skills-content{
         display: grid;
         justify-content: space-around;
+        grid-template-rows: 30vh 30vh 30vh;
         grid-template-columns: 1fr;
+        
 
     }
     #contact,#repository{
         height: 60vh!important;
     }
     #me {
-        height: 80vh!important;
+        height: 100vh!important;
     }
 
     #me{
@@ -108,11 +111,11 @@ $div-height: 850px;
             width: 4rem;
         }
         h1{
-            font-size: 4em;
+            font-size: 3.5em;
             letter-spacing: 0.4rem;
         }
         h3{
-            font-size: 2.0em;
+            font-size: 1.7em;
         }
     }
 }
@@ -141,4 +144,51 @@ $div-height: 850px;
     
 }
 
-
+@media only screen and (max-width: 576px){
+    #me{
+        img{
+            height: 3.5rem;
+            width: 3.5rem;
+        }
+        h1{
+            font-size: 2.4em!important;
+            letter-spacing: 0.4rem;
+        }
+        h3{
+            font-size: 1.4em!important;
+        }
+    }
+    .skills-content{
+        font-size: 1em;
+        h2{
+            font-size:1.4em;
+        }
+        
+        
+        margin-left: 2.5rem!important;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 100vw;
+    
+        
+    }
+    #contact,#repository{
+        p{
+            font-size: 1.0em;
+        }
+        
+    }
+    .app{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 50rem auto auto;
+        grid-template-areas: 'me' 'skills' 'repository' 'contact';
+    }
+   
+    .contain{
+    
+        h1{
+            font-size: 2.5rem!important;
+             
+        }
+    }
+}

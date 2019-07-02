@@ -2,11 +2,11 @@ import React from 'react'
 
 
 export default props =>
-    <div className='contain'>
+    <div className='contain wrap'>
         <h1><i className="fa fa-angle-left"></i>/ <i className="fa fa-angle-right"></i> Skills</h1>
         <div className='skills-content'>
             <div className='languages-content'>
-                <h2>Languages</h2>
+                <h2 >Languages</h2>
                 <ul className='tree'>
                     <li>JavaScript</li>
                     <ul>
